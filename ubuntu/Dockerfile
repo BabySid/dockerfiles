@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:ubuntu:mantic-20230801
+FROM ubuntu:mantic-20230801
 
 # Install.
 RUN \
@@ -14,7 +14,7 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y curl git htop man unzip vim wget cmake clang curl && \
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o rust.sh && sh ./rust.sh -y && rm rust.sh \
-  source "$HOME/.cargo/env" \
+  echo "source $HOME/.cargo/env" >> /root/.bashrc \
   rm -rf /var/lib/apt/lists/*
 
 # Add files.
