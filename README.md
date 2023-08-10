@@ -11,6 +11,6 @@ The compiler contains `g++ clang rust curl vim wget ...`
 
 #### Usage
 
-`docker run -it --rm --name ubuntu-dev --log-opt max-size=1g --log-opt max-file=5 -v ($echo $HOME):/home/ --workdir /home --user $(id -u):$(id -g) -P babysid/ubuntu:latest`
+`docker run -it --rm --name ubuntu-dev --log-opt max-size=1g --log-opt max-file=5 -v $(echo $HOME):/home/ --workdir /home --user $(id -u):$(id -g) -P babysid/ubuntu:latest`
 
 
