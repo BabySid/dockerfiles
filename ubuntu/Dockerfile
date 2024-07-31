@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:mantic-20230801
+FROM ubuntu:jammy-20240627.1
 
 # Install.
 RUN \
