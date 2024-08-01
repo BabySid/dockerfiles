@@ -13,6 +13,7 @@ RUN \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
   apt-get install -y curl git htop man unzip vim wget cmake clang curl libboost-all-dev && \
+  apt-get install -y jq tree && \ 
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o rust.sh && sh ./rust.sh -y && rm rust.sh \
   echo "source $HOME/.cargo/env" >> /root/.bashrc \
   rm -rf /var/lib/apt/lists/*
