@@ -6,8 +6,7 @@ Dockerfile projects for development environment
 The compiler contains `g++ clang rust curl vim wget ...`
 
 #### Build
-
-`cd ubuntu && docker build -t babysid/ubuntu:latest . --no-cache`
+`docker build -t babysid/ubuntu:noble -f ubuntu/Dockerfile ubuntu/`
 
 #### Usage
 **RunOnce**
